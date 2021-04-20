@@ -1,0 +1,30 @@
+#Bases ul 
+{
+    list-style: none;
+    padding: 0 0px 0 30px;
+    font-size: 1.7rem;
+    line-height: 28px;
+    text-align: justify;
+    li {
+        margin: 2rem 0;
+        
+        span {
+        color: $amarillo;
+        font-weight: $black;
+        }
+    }
+    &.sublista{
+        span{color:$azul!important;
+        }
+    }
+    em{
+        &.indentado {
+        font-style: inherit;
+        padding: 20px 20px;
+        width: 100%;
+        float: left;
+        }
+    }
+
+  
+}

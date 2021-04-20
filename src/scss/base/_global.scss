@@ -1,0 +1,51 @@
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:$fuentePrincipal;
+    font-size:1.6rem;
+    margin:0;
+    overflow-x:hidden;
+}
+p{
+    color:$negro;
+}
+.contenedor{max-width:120rem;width:95%;margin:0 auto;overflow:hidden;}
+a{text-decoration:none;}
+h1,h2,h3{margin: 0;}
+h1{
+    font-size:4rem;
+}
+h2{font-size:3.6rem;text-transform:uppercase;}
+h3{font-size:1.8rem;}
+
+img{width:100%;}
+.container{
+    width: 80%;
+    overflow:hidden;
+    display: table;
+    position: relative;
+    /* justify-content: center; */
+    margin: 0 auto;
+    @include telefono{width:100%; padding:0 2rem;}
+}
+.right{float:right;}
+
+.texto{
+    a{
+        color:#7912b3;
+        font-weight: $bold; 
+        &:hover{
+            color:darken(#7912b3, 5);
+        }
+    }
+}
+
+.showdesktop{
+    @include telefono{display:none;}
+}
