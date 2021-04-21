@@ -7,6 +7,7 @@
     <title>Ameyalli Yáñez - Portafolio</title>
     <link rel="stylesheet" href="build/css/app.min.css">
     <link rel="icon" href="build/img/favicon/favicon.ico">
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <li><a href="#Porta">Proyectos</a></li>
             <li><a href="#Experiencia">Experiencia</a></li>
             <li><a href="#Educacion">Educación</a></li>
-            <li><a href="Habilidades">Habilidades</a></li>
+            <li><a href="#Habilidades">Habilidades</a></li>
             <li><a href="#Contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -65,7 +66,7 @@
                     <ul class="grid-ins">
                         <li><img src="./build/img/portafolio/androgynysoul.jpg"></li>
                         <li>
-                            <div class="cuadro negro">
+                            <div class="cuadro azul">
                                 <p><strong>AndrogynySoul</strong><br></p>
                             </div>
                         </li>
@@ -83,7 +84,7 @@
                         </li>
                         <li><img src="./build/img/portafolio/escrituras.jpg"></li>
                         <li>
-                            <div class="cuadro negro">
+                            <div class="cuadro azul">
                                 <p><strong>Fábrica de producción Editorial</strong><br> En todas sus ediciones</p>
                             </div>
                         </li>
@@ -177,7 +178,6 @@
         <div id="Educacion" class="container">
             <div class="texto">
                 <div class="titulos">
-                    <!-- <img src="build/img/cuerpo/coordinadora.png" alt="coordinadora">-->
                     <h2>EDUCACIÓN
                     </h2>
                 </div>
@@ -197,6 +197,19 @@
                     </div>
                 </div>
                 <div id="trigger2"></div>
+            </div>
+        </div>
+        <div id="Habilidades" class="container">
+            <div class="texto">
+                <div class="titulos">
+                    <h2>HABILIDADES
+                    </h2>
+                </div>
+            <div class="ct-chart_back ct-perfect-fourth"></div>
+            <div class="ct-chart_front ct-perfect-fourth"></div>
+            <div class="ct-chart_adobe ct-perfect-fourth"></div>
+            <div class="ct-chart_office ct-perfect-fourth"></div>
+            <div class="ct-chart_otros"></div>
             </div>
         </div>
         <div id="Contacto">
@@ -226,6 +239,66 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 <script src="build/js/bundle.min.js"></script>
+<script>
+            new Chartist.Pie('.ct-chart_back', {
+            series: [45, 40, 15],
+            labels: ['Javascript','PHP','REACT']
+            }, {
+            donut: true,
+            donutWidth: 60,
+            donutSolid: true,
+            startAngle: 270,
+            total: 200,
+            showLabel: true
+            });
 
+            new Chartist.Pie('.ct-chart_front', {
+            series: [35, 30, 35],
+            labels: ['CSS','SASS','HTML']
+            }, {
+            donut: true,
+            donutWidth: 60,
+            donutSolid: true,
+            startAngle: 270,
+            total: 200,
+            showLabel: true
+            });
+            new Chartist.Pie('.ct-chart_adobe', {
+            series: [10, 10, 10],
+            labels: ['AI','PS','Id']
+            }, {
+            donut: true,
+            donutWidth: 60,
+            donutSolid: true,
+            startAngle: 270,
+            total: 100,
+            showLabel: true
+            });
+
+            new Chartist.Pie('.ct-chart_office', {
+            series: [25, 25, 15],
+            labels: ['Word','PPT','Excel']
+            }, {
+            donut: true,
+            donutWidth: 60,
+            donutSolid: true,
+            startAngle: 180,
+            total: 100,
+            showLabel: true
+            });
+
+            new Chartist.Pie('.ct-chart_office', {
+            series: [50, 35, 15],
+            labels: ['Redacción','Atención a detalles','Trabajo en equipo']
+            }, {
+            donut: true,
+            donutWidth: 60,
+            donutSolid: true,
+            startAngle: 180,
+            total: 100,
+            showLabel: true
+            });
+</script>
 </html>
