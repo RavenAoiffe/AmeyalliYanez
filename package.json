@@ -1,7 +1,7 @@
 {
-  "name": "fabrica-editorial",
+  "name": "Ameyalli Yolanda Yanez Martinez",
   "version": "1.0.0",
-  "description": "Sitio web de la Fabrica 2021",
+  "description": "Portafolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
