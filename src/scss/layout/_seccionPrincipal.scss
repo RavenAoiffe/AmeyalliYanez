@@ -48,7 +48,7 @@
     margin: 5rem 0;
     p{
         font-size: 1.6rem;
-        line-height: 15px;
+        line-height: 25px;
         text-align: justify; 
         
         span{color:$cafe;font-weight: $bold;}
@@ -114,6 +114,7 @@ color:$amarillo;}
     .texto{
         p{
             line-height: 30px;
+            text-align: inherit;
         }
     }
 }
