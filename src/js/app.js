@@ -89,7 +89,7 @@ animacion_en_y("#Anteriores .segunda > img", "#trigger7", -150, 150, 1);
 /* SCROLL NAV */
 
 function scrollNav() {
-  const enlaces = document.querySelectorAll('.navegacion-principal li a');
+  const enlaces = document.querySelectorAll('.navegacion-principal li .enlace');
   const enlace_interno = document.querySelectorAll('.enlace_interno');
   //guardar todos en un solo arreglo
   const enlaces_total = Object.assign({}, enlaces, enlace_interno);
