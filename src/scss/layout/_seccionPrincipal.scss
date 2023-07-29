@@ -48,7 +48,7 @@
     margin: 5rem 0;
     p{
         font-size: 1.6rem;
-        line-height: 30px;
+        line-height: 25px;
         text-align: justify; 
         
         span{color:$cafe;font-weight: $bold;}
@@ -84,7 +84,7 @@
         float: left;
         margin: 1rem 3rem;
     }
-    p{width: 100%;
+    h3{width: 100%;
     font-size:2rem;
 font-weight: $bold;
 color:$amarillo;}
@@ -110,3 +110,11 @@ color:$amarillo;}
 }
 
   
+#Contacto{
+    .texto{
+        p{
+            line-height: 30px;
+            text-align: inherit;
+        }
+    }
+}

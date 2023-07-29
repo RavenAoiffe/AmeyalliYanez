@@ -32,7 +32,7 @@ img{width:100%;}
     position: relative;
     /* justify-content: center; */
     margin: 0 auto;
-    @include telefono{width:100%; padding:0 2rem;}
+    @include telefono{width:100%; padding:1rem;}
 }
 .right{float:right;}
 
