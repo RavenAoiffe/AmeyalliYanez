@@ -38,10 +38,10 @@ img{width:100%;}
 
 .texto{
     a{
-        color:#f4c63d;
+        color:#333131;
         font-weight: $bold; 
         &:hover{
-            color:darken(#f05b4f, 5);
+            color:darken(#8800ff, 5);
         }
     }
 }
