@@ -1,20 +1,21 @@
-.ventana_modal {
+.ventana_modal { 
     position: fixed;
     top:0;
     height:100%;
     background: rgba(0,0,0,.5);
     width: 100%;
     z-index: 99;
-    display: flex;
+    //display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    @include desktop{
+  /*  @include desktop{
        display:initial;
        overflow-y:auto;
     }
-
+*/
     .texto_modal{
         background: #fff;
         max-width: 920px;
@@ -66,4 +67,7 @@
             cursor:pointer;
         }
     }
+}
+.modal{
+    cursor: pointer;
 }

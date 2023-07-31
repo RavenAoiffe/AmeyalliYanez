@@ -15,7 +15,7 @@ const rename = require('gulp-rename');
 const paths ={
     imagenes: 'src/img/**/*',
     scss: 'src/scss/**/*.scss',
-    js: 'src/js/app.js'
+    js: 'src/js/**.js'
 }
 function css(){
     return src(paths.scss)
@@ -27,12 +27,12 @@ function css(){
     .pipe(dest('./build/css'))
 }
 
-function imagenes(){
+/*function imagenes(){
     return src(paths.imagenes)
     .pipe(imagemin())
     .pipe( dest('./build/img'))
     .pipe(notify({message: 'Imagen Minificada'}));
-}
+}*/
 
 function javascript(){
     return src(paths.js)
@@ -45,11 +45,13 @@ function javascript(){
 }
 
 function watchArchivos(){
-    watch('src/scss/**/*', css)
+    watch('src/scss/**/*', css);
+    watch('src/js/**/*', javascript);
 }
 
 exports.css = css;
 exports.watchArchivos = watchArchivos;
 exports.javascript = javascript;
 
-exports.default = series(imagenes,javascript,watchArchivos);
+//exports.default = series(imagenes,javascript,watchArchivos);
+exports.default = series(javascript,watchArchivos);
