@@ -1,11 +1,14 @@
 #menu{
-    @include desktop{flex-direction: column;}
+    flex-direction: column;
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    justify-content: space-around; 
-    margin: 3rem 0;
-    /*box-shadow: 0 10px 10px -6px #eee;*/
+    justify-content: space-between;
+    margin:0;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    width: 100%;
     p{  
         @include tablet{
             max-width: 100%;
@@ -18,24 +21,27 @@
     }
 
     ul{
-        @include tablet{flex-direction: column; display:none;}
+       flex-direction: column;
         list-style: none;
+        //overflow: scroll;
         display: flex;
-        flex-direction: row;
         align-items:center;
-        gap: 2rem;
+        justify-content: space-around;
         margin: 0; 
-        padding: 0;
-        margin:20px 0;
+        padding: 2rem 0;
+        margin:0;
+        display:none;
         li{
             width: auto;
             float: left;
             a{
-                font-size: 13px;
+                font-size: 17px;
                     text-align: center;
                     text-transform: uppercase;
                     color:$negro;
-
+                    @include tablet{
+                        font-size: 13px;
+                    }
                     &:hover{                     
                         background: black;
                         padding: 5px 1px;
@@ -43,8 +49,14 @@
                     }
             }
         }
-        &.display{display:flex;
-        
+        &.display{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
         }
     }
 
@@ -65,7 +77,7 @@
     }
     
     .menu_movil{
-        display:none;
+        //display:none;
         @include tablet{ 
             display:flex;
             flex-direction: column;
@@ -80,4 +92,23 @@
             margin: 5px;
         }
     }
+}
+
+#menu_movil {
+    flex-direction: column;
+    display: flex;
+}
+
+a.cerrar {
+    position: absolute;
+    right: 0;
+    font-size: 30px!important;
+    font-weight: 900;
+    margin: 0 20px;
+} 
+
+.menu-rs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
