@@ -78,6 +78,7 @@
     }
     
     .menu_movil{
+        cursor: pointer;
         //display:none;
         @include tablet{ 
             display:flex;
