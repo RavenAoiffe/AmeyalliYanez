@@ -27,12 +27,12 @@ function css(){
     .pipe(dest('./build/css'))
 }
 
-/*function imagenes(){
+function imagenes(){
     return src(paths.imagenes)
     .pipe(imagemin())
     .pipe( dest('./build/img'))
     .pipe(notify({message: 'Imagen Minificada'}));
-}*/
+}
 
 function javascript(){
     return src(paths.js)
@@ -53,5 +53,5 @@ exports.css = css;
 exports.watchArchivos = watchArchivos;
 exports.javascript = javascript;
 
-//exports.default = series(imagenes,javascript,watchArchivos);
-exports.default = series(javascript,watchArchivos);
+exports.default = series(imagenes,javascript,watchArchivos);
+//exports.default = series(javascript,watchArchivos);
