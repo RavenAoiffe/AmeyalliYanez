@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2023-08-21T19:55:51.174Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" version="21.6.8" etag="FUPqO0CmpUzdoquOe6eQ" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-21T20:18:31.157Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="nnM5iV1aWk3xJXl9tb8o" version="21.6.8" type="github">
   <diagram name="Página-1" id="pLbmzs-tCkocFzSn-4DI">
-    <mxGraphModel>
+    <mxGraphModel dx="918" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WUV1YNXfe9AuAQeIhufc-1" value="NO FUNCTIONAL REQUIREMENTS&lt;br&gt;&lt;br&gt;The system has to do the operations in N time&lt;br&gt;&lt;br&gt;The system hast to have the capability to work with users &amp;lt;= 1000 users&lt;br&gt;&lt;br&gt;The system has an administrator and a user&lt;br&gt;&lt;br&gt;The system has to update once or more per month&lt;br&gt;&lt;br&gt;The system has a administrator page, an a final landing. Both has to be Responsive" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WUV1YNXfe9AuAQeIhufc-2" value="FUNCTIONAL REQUIREMENTS&lt;br&gt;&lt;br&gt;There will be two types of user: administrator and final user&lt;br&gt;&lt;br&gt;The administrator will has the capability to insert, select, update and delete the activities&lt;br&gt;&lt;br&gt;The activity will have an unique id&lt;br&gt;id = uuid,&lt;br&gt;date = type date&lt;br&gt;hour = type hour,&lt;br&gt;&lt;br&gt;image&lt;br&gt;carrousel_image&lt;br&gt;register open&amp;nbsp;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="310" width="270" height="200" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
